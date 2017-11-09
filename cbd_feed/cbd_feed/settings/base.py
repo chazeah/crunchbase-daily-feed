@@ -19,12 +19,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'zxyzfv8by&)730=z&doua%c)arsb@4$w9wxp1amrorab!31cw_'
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
 ALLOWED_HOSTS = []
 
 
@@ -68,20 +62,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'cbd_feed.wsgi.application'
-
-
-# Database
-# https://docs.djangoproject.com/en/1.11/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'cbdfeed',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-    }
-}
 
 
 # Password validation
