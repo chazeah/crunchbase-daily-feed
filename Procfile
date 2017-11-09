@@ -1,1 +1,1 @@
-web: cd src && gunicorn cbd_feed.wsgi --log-file -
+web: cd cbd_feed && gunicorn cbd_feed.wsgi --log-file -
