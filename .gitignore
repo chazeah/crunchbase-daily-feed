@@ -101,6 +101,8 @@ ENV/
 .mypy_cache/
 
 static-files/
+static/
+staticfiles/
 
 .DS_Store
 

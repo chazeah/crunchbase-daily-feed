@@ -15,3 +15,6 @@ DATABASES = {
         conn_max_age=int(os.environ.get('DJANGO_DB_CONN_MAX_AGE', 0)),
     ),
 }
+
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
