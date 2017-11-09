@@ -5,6 +5,10 @@ from .base import *  # noqa
 
 SECRET_KEY = os.environ['DJANGO_SECRET_KEY']
 
+ALLOWED_HOSTS = (
+    'cbd-feed.herokuapp.com',
+)
+
 DATABASES = {
     'default': dj_database_url.parse(
         os.environ['DATABASE_URL'],
