@@ -1,3 +1,29 @@
+import requests
+
 from django.db import models
 
-# Create your models here.
+
+class ResultManager(models.Manager):
+    def from_url(self, url):
+        result = requests.get(url)
+        result = self.create(
+            response_code=result.status_code,
+            response_text=result.text,
+            url=url,
+        )
+        return result
+
+
+class Result(models.Model):
+    response_code = models.PositiveIntegerField()
+    response_text = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    url = models.URLField()
+
+    objects = ResultManager()
+
+    class Meta:
+        ordering = ('created_at', )
+
+    def __str__(self):
+        return 'Requested on {}'.format(self.created_at)
