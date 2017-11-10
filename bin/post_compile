@@ -1,2 +1,2 @@
 echo "=> Performing database migrations..."
-python manage.py migrate
+python cbd_feed/manage.py migrate
