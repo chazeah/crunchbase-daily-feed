@@ -10,4 +10,8 @@ class ResultAdmin(admin.ModelAdmin):
         'created_at',
         'url',
         'response_code',
+        'has_been_parsed',
+    )
+    list_filter = (
+        'has_been_parsed',
     )

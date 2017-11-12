@@ -8,3 +8,4 @@ urllib3==1.22
 chardet==3.0.4
 idna==2.6
 certifi==2017.11.5
+beautifulsoup4==4.6.0

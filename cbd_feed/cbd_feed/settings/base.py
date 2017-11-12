@@ -27,7 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'cbd_feed',
-    'scraper',
+    'scraper.apps.ScraperConfig',
 ]
 
 MIDDLEWARE = [
