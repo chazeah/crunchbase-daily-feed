@@ -28,6 +28,7 @@ INSTALLED_APPS = [
 
     'cbd_feed',
     'scraper.apps.ScraperConfig',
+    'content_parser.apps.ContentParserConfig',
 ]
 
 MIDDLEWARE = [

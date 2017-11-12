@@ -15,12 +15,12 @@ class ResultManager(models.Manager):
 
 
 class Result(models.Model):
-    response_code = models.PositiveIntegerField()
-    response_text = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
-    url = models.URLField()
     has_been_parsed = models.BooleanField(default=False)
     parsed_at = models.DateTimeField(blank=True, null=True)
+    response_code = models.PositiveIntegerField()
+    response_text = models.TextField()
+    url = models.URLField()
 
     objects = ResultManager()
 
