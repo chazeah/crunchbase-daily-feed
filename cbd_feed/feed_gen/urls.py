@@ -4,5 +4,5 @@ from . import views
 
 
 urlpatterns = [
-    url(r'^$', views.feed, name='feed'),
+    url(r'^$', views.LatestEntriesFeed()),
 ]
