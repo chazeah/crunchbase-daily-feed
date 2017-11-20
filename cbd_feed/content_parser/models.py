@@ -8,7 +8,7 @@ class CBDPost(models.Model):
     title = models.TextField()
 
     class Meta:
-        ordering = ('published_at', )
+        ordering = ('-published_at', )
         verbose_name = 'CBD Post'
         verbose_name_plural = 'CBD Posts'
 
