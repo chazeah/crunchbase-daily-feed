@@ -9,3 +9,6 @@ class CBDPostAdmin(admin.ModelAdmin):
         '__str__',
         'published_at',
     )
+    ordering = (
+        '-published_at',
+    )

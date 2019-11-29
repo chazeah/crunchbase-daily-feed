@@ -15,3 +15,6 @@ class ResultAdmin(admin.ModelAdmin):
     list_filter = (
         'has_been_parsed',
     )
+    ordering = (
+        '-created_at',
+    )
